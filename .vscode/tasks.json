@@ -21,8 +21,22 @@
       "args": [
         "serve",
         "--with-mocks",
-        "--in-memory?"
+        "--in-memory"
       ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Aqueitas: Sync and Log",
+      "type": "shell",
+      "command": "git pull origin $(git branch --show-current) && ./.aqueitas/audit-changes.sh",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "close": true
+      },
       "problemMatcher": []
     }
   ]
